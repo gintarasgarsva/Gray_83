@@ -1,33 +1,31 @@
 <?php
 
-$greeting_message = rand(1, 3);
-if ($greeting_message == 1) {
-    $greeting = 'Aloha!!!';
-}
-if ($greeting_message == 2) {
-    $greeting = 'Supp Hommies!!!';
-}
-if ($greeting_message == 3) {
-    $greeting = 'What\'s crackin??';
-}
+$diena = [
+    
+    'pradzia' => 'Dienos pradzia, nieko neivyko',
+    'px' => 'Pavelavai i darba',
+    'bl' => 'Kabantys nx',
+    'nx' => 'nusprogo masino tarpine tarp vairo ir sedynes',
+    'pz2a' => 'Atsivilkau i paskaitas basas per sniega antra kaledu diena',
+]
 
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="refresh" content="10" >
+      <!--  <meta http-equiv="refresh" content="10" > -->
         <style>
             .background{
-                background-image: url('https://st4.depositphotos.com/9568760/20501/i/1600/depositphotos_205017032-stock-photo-white-fractured-surface-abstract-background.jpg');
+                background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa49tzLec8V_58e5rE_I-zeyrafEAqR7TQiy3n_aZNmA8wit-a');
                 background-size:cover;
             }
             .text{
                 text-align: center;
-                color: greenyellow;
+                color: white;
             }
             nav{
                 text-align:center;
-                padding-bottom: 200px;
+                padding-bottom: 50px;
             }
             nav a{
                 border: 1px solid green;
@@ -52,8 +50,8 @@ if ($greeting_message == 3) {
             <a href="contact.php">CONTACT</a> 
         </nav>
         <div class="text">
-            <h1>GRAY 83</h1>
-            <h2><?php print $greeting; ?></h2>
+            <h1>PZ2A-MAT!!</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROWPFIxdzIggabeEqtgbElEKCWBxzstOEvjb-yOgMTQB8ZMHB7">
         </div>
     </body>
 </html>
