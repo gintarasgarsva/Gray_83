@@ -2,17 +2,17 @@
 
 $form = [
     'fields' => [
-        'mano_vardas' => [
+        'Mano vardas' => [
             'label' => 'Vardas',
             'type' => 'text',
             'placeholder' => 'Vardas',
         ],
-        'kiek_zirniu_turiu' => [
+        'Kiek zirniu turiu' => [
             'label' => 'Zirniai',
             'type' => 'text',
             'placeholder' => '1-100',
         ],
-        'paslaptis_kodel_turiu_zirniu' => [
+        'Paslaptis kodel turiu zirniu' => [
             'label' => 'Reason',
             'type' => 'password',
             'placeholder' => 'Issipasakok',
@@ -38,7 +38,7 @@ $form = [
             .inputs{
                 display:block;
                 margin-top:1%;
-                width: 100px;
+                width: 200px;
             }
             button{
                 margin-top:1%;
@@ -49,7 +49,7 @@ $form = [
         <form method="POST">
             <?php foreach ($form['fields'] as $field_id => $field): ?>
                 <label class="inputs">
-                    <span><?php print $field['label']; ?></span>
+                    <span><?php print $field_id; ?></span>
                     <input type="<?php print $field['type']; ?>" name="<?php print $field['label']; ?>" placeholder="<?php print $field['placeholder']; ?>" >
                 </label>
             <?php endforeach; ?>
